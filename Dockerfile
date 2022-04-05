@@ -8,3 +8,7 @@ RUN pacman -Syu --noconfirm \
     python-ruamel-yaml \
     python-gobject \
     flatpak-builder
+
+RUN flatpak install -y org.kde.Platform//5.15-21.08
+RUN flatpak install -y org.kde.Sdk//5.15-21.08
+
